@@ -137,3 +137,103 @@ izračunati iz ključa za šifrovanje (javni)
 bita
 - Blok šifre - određuje se jedan po jedan blok elemenata otvorenog teksta
 - Protočne šifre - elementi otvorenog teksta obrađuju se jedan po jedan
+U postupku šifrovanja se _otvoreni tekst_ pretvara u _šifrat_ kako bi se zaštitila informacija.
+
+Svaka S-kutija kod DES šifrovanja je fiksna matrica dimenzija _4x16_, čiji su elementi cijeli brojevi između _0 i 15_.
+
+Zaokružiti od koliko 32-bitnih riječi se sastoji prošireni ključ kod 128-bitnog AES-a:
+44
+Indeks koincidencije kod Vigenerove šifre koristi se za određivanje:
+dužine ključa
+Ako je L3R3 izlaz iz treće runde kod DESa onda se izlaz R4 kod četvrte runde računa kao:
+R4=L3⊕ f (R3, K4)
+U AES kriptosistemu množenje polinoma kod kojih su koeficijenti bajtovi (množenje AES blokova) vrši se po modulu:
+X4 +1
+Ako je L3R3 izlaz iz treće runde kod DESa onda se izlaz L4 kod četvrte runde računa kao:
+L4=R3
+Pravilan redosled izvođenja transformacija u AES-u:
+ByteSub
+ShiftRow
+MixColumn
+AddRoundKey
+IDEA je kriptosistem koji koristi ključ dužine _128b_ za šifrovanje blokova otvorenog teksta dužine _64b_.
+
+Koliko se međuključeva formira od zadatog ključa kod DES-a i kolika je dužina međuključa u bitovima (broj međuključeva-dužina međuključa):
+16-48
+U koliko rundi se sprovodi šifrovanje kod DES kriptosistema i koliko bitova sadrži blok otvorenog teksta koji se šifruje (broj rundi - broj bitova):
+16-64
+Kriptogram je:
+šifrat
+Od koliko bitova se sastoji zadati ključ (bez paritetnih bitova), a od koliko bitova međuključevi (ključevi rundi) kod DES-a:
+56-48
+Koliki je broj rundi, a koliki broj međuključeva (uključujući i početni ključ) kod AES-a sa 128- bitnim ključem (br. rundi - br. međuključeva):
+10-11
+AES blokovi predstavljaju matrice:
+4x4 bajta
+Kolika je dužina ključa u DES kriptosistemu (izražena u broju bitova) sa i bez paritetnih bitova (sa-bez):
+64-56
+Rezultat inverzne permutacije IP-1 kod DES-a je:
+šifrat
+Rezultat završne permutacije (P) kod DES-a je:
+izlaz iz funkcije
+Dužina međuključeva u rundama DES-a (izražena u broju bitova) je:
+48
+Fiksna završna permutacija P koja se koristi u DES-u u svakoj rundi vrši permutaciju niza bitova sa izlaza S-kutija, tako da se kao rezultat završne transformacije P dobija niz dužine:
+32b
+Efektivna dužina ključa u DES kriptosistemu je:
+56b
+U koliko rundi se sprovodi šifrovanje kod DES kriptosistema i koliko bitova sadrži blok otvorenog teksta koji se šifruje:
+16-64
+Kolika je dužina ključa u DES kriptosistemu sa i bez paritetnih bitova:
+64-56
+Koliko supstituciskih kutija se koristi u DES-u:
+8
+Fiksna funkcija proširenja E koja se koristi u DES-u u svakoj rundi vrši proširenje ulaznog niza Ri-1 tako da na njenom ulazu i izlazu imamo:
+32b-48b
+Koliko međuključeva se formira od zadatog ključa kod DES-a:
+16
+Na kojoj šifri je zasnovan DES algoritam:
+Fiestel-ovoj
+U ECB modu poruka se u slučaju DES-a razbija na blokove dužine:
+64b
+Operacije SubWord i RotWord koriste se kod:
+AES-a
+U AES-u Rijndael se šifruju blokovi otvorenog teksta dužine:
+128b
+Koja transformacija se izostavlja u poslednjoj rundi kod AES:
+MixColumn
+Kasiskijev test koristi se za određivanje:
+dužine ključa
+Broj supstitucijskih (S) kutija u DES-u je:
+8
+Primjenom Kasiskijevog testa uočeni su identični segmenti šifrata čije se početne pozicije nalaze na udaljenostima: d1=14, d2=49, d3=77. Zaključujemo da je dužina ključa: 
+7 (naci najmanji zajednicki djelilac)
+
+Ako kriptosistem radi u ECB (Electronic Codebook) modu, šifrovanjem ulaznih podataka (djelova otvorenog teksta) x1, x2 i x3 dobijaju se redom djelovi šifrata y1, y2 i y3. Šta sve (od x1, x2 i x3) direktno ili indirektno utiče na vrijednost y3:
+x3
+Kod kojih modova (načina) rada blokovnih kriptosistema se greška u transmisiji ne propagira (ECB - Electronic Codebook, CBC - Cipher Block Chaining, CFB - CIpher Feedback, OFB - OutputFeedback):
+ECB i OFB 
+Rezultat fiksne inicijalne permutacije (IP) kod DES-a je:
+ulaz u prvu rundu
+Kod AES-a sa 128-bitnim ključem, prošireni ključ se sastoji od _44_ riječi, pri čemu jedna riječ sadrži _4_ bajta
+Koji od ponuđenih odgovora predstavlja multiplikativni inverz broja a+7:
+15 (tabela za Afinu šifru)
+Ako je u drugom redu AES bloka (drugi po redu odozgo) prije izvođenja transformacije ShiftPow bio niz (4A 5B 56 11), nakon transformacije preći će u niz:
+   5B 56 11 A4
+Kod DES kriptosistema šifrovanje se sprovodi u _16_ rundi, pri čemu se svaki blok otvorenog teksta koji se šifruje sadrži _64_ bita.
+Kod AES-a sa 128-bitnim ključem, postoji ukupno _11_ međuključeva(uključujući i početni ključ), dok je broj rundi_10_. 
+Večina rijeći ri u medšuključevima AES-a dobija se po formulu:
+ri=ri-1⊕ri-4
+Indeks koincidencije, kod Viznerove sifre koristi se prilikom odredjivanja duzine kljuca.
+Koja dva moda raqda obezbjeđuju da DES funkcioniše kao protočna šifra:
+CFB i OFB
+Fiksna afina transformacija koristi se u AES-u prilikom definisanja operacije:
+AddRoundKey
+Nabrojati osnovne kriptoanaliticke napade?
+poznat samo šifrat
+poznat i otvoreni tekst
+odabrani otvoreni tekst – preivremeni pristup alatu za šifrovanje
+odabrani dio šifrata – privremeni pristup alatu za dešifrovanje
+
+
+
