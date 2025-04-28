@@ -1,0 +1,82 @@
+Projekat II – Teorija
+
+Bazicni slucaj ili slucaj rekurzivne reakcije obezbjedjuju jednostavan rezultat i definisu kada se rekurzija zavrsava. Tacno
+
+Instrukcije uslovnog skoka se za floating-point vrijednosti realizuju na isti nacin kao I za vrijednost intiger. Netacno
+
+Zadata je instrukcija: out.w.s.FRdest, FRsrc Oznacite tacan opis instrukcije:
+Konvertuje 32-bitni float-point u reg FRsrc u 32 bitni intiger I smijesti ga u registar FRdest.
+
+Prilikom prosledjivanja floating point vrijednosti koristi se registar specijalne namjere FCC
+Ako se nakon poredjenja u tom registru nalazi Jedan uslov poredjenja je ispunjen a ako se nalazi Nula uslov poredjenja nije ispunjen.
+
+Ako su nam argumenti procedure floating point vrijednosti za njihovo prosledjivanje koristimo 
+f12, f13, f14, f15	
+Za rad sa floating point vrijednostima opredijeljena su 32 floating-point registra (od $f0 do $f31).
+
+Za razliku od zero(0) integer registra u kome je hardverski smjestena 0 I njegov sadrzaj nije moguce mijenjati sadrzaj f0 se mijenja po potrebi. Tacno
+
+Kod dinamicki linkovanih biblioteka sa tzv lijenim linkovanjem procedura svaka rutina se linkuje tek nakon sto je pozvana. Tacno
+
+Izaberite tacan odgovor: 
+Linker kombinuje kolekciju object fajlova I biblioteka u izvrsni executable fajl koji je racunar u stanju da pokrene.
+
+Pozivni kod za zavrsavanje programa je 10.
+
+Prilikom citanja intigera osim odgovarajuceg pozivnog koda nije potrebno prosledjivati vise ni jedan podatak. Tacno
+
+Operativni sistem obezbjedjuje neke osnovne funkcije koje korisnicki programi ne mogu sami da obave I te funkcije se nazivaju sistemskim pozivima. Tacno
+
+Oznaci nacine implementiranja multidimenzionalnih naziva u asembleru:
+ implementacija po kolonama, implementacija po vrstama.
+
+Upotrebom registarskih data movement instrukcija reputacija broja se ne mijenja. Tacno
+
+Instrukcija bezuslovnog skoka se za floating point vrijednosti realizuje na isti nacin kao i za integer vrijednosti. Tacno
+
+Osim bazicnog slucaja svaka rekurzivna relacija ima.
+Pravilo ili set pravila koja omogućavaju vraćanje (redukovanje) do bazičnog slučaja.
+
+Koja instrukcija sluzi za kopiranje floating-point vrijednosti jednostruke tacnosti iz source registra u destinacioni integer registar? Napisati IME instrukcije. FMV.X.W
+
+• MIPS obezbjeđuje sljedeće floating-point instrukcije:
+1.Data movement instrukcije 
+Memory transfer instrukcije  
+Registarske data movement instrukcije 
+Instrukcije za konverziju podataka 
+2. Aritmetičke instrukcije 
+3. Instrukcije uslovnog skoka
+
+Load i store instrukcije vrše transfer podataka između memorije i registara, i obrnuto.
+
+Kod implementacije po vrstama memorijski ofset se računa na sljedeći način:
+ adresa = početna_adresa + (index_vrste *broj_kolona + index_kolone) * mem_veličina_podatka
+Kod implementacije po vrstama memorijski ofset se računa na sljedeći način: 
+adresa = početna_adresa + (index_vrste *broj_kolona + index_kolone) * mem_veličina_podatka
+
+KOPIRANJE
+mfc1 Rdest, FRsrc - iz  flo reg  FRsrc u int reg Rdest.
+mfc1.d Rdest, FRsrc -  iz flo reg  FRsrc i FRsrc+1 u int reg  Rdest i Rdest+1.
+mtc1 Rsrc, FRdest - iz int reg Rsrc u flo reg FRdest 
+mtc1.d Rsrc, Frdest - iz int reg Rsrc i Rsrc+1  u flo  reg  FRdest i FRdest+1 
+mov. <type> FRdest, FRsrc -Kopiraj sadržaj source registra u destinacioni registar.
+ FMV.X.W- flp vrijednosti jednostruke tacnosti iz source reg u dest int reg 
+
+KONVERTOVANJE
+cvt.d.s FRdest, FRsrc - 32-bit fl-point u FRscr u double prec i smjesti ga u registar FRdest.
+cvt.d.w FRdest, FRsrc -32-bit int u FRsrc u double prec i smjesti ga u registar FRdest.
+cvt.s.d FRdest, FRsrc -64-bit flp u FRsrc u 32-bitni flp i smjesti ga u registar FRdest.
+cvt.s.w FRdest, FRsrc- 32-bit int u FRsrc u 32-bitni flp i smjesti ga u registar Frdest
+cvt.w.d FRdest, FRsrc. - 64-bit flp u FRsrc u 32-bitni int i smjesti ga u registar Frdest.
+cvt.w.s FRdest, FRsrc- 32-bit flp u FRsrc u 32-bitni int i smjesti ga u registar FRdest.
+
+UPOREĐIVANJE
+c.x.s FR1, FR2 -  sadržaj 32-bit flp reg FR1 i FR2, i ako je uslov ispunjen code=1 (u suprotnom code=0).
+c.x.d FR1, FR2- 64-bit flp reg FR1 i FR2, i ako je uslov ispunjen code=1 (u suprotnom code=0).
+bc1t address- Ako je code=1 (true) idi na naznačenu adresu (labelu)
+bc1f address- Ako je code=0 (false) idi na naznačenu adresu (labelu)
+
+Kod implementacije po vrstama memorijski ofset se računa na sljedeći način:
+ adresa = početna_adresa + (index_vrste *broj_kolona + index_kolone) * mem_veličina_podatka
+Kod implementacije po vrstama memorijski ofset se računa na sljedeći način: 
+adresa = početna_adresa + (index_vrste *broj_kolona + index_kolone) * mem_veličina_podatka
