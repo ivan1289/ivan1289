@@ -78,5 +78,5 @@ bc1f address- Ako je code=0 (false) idi na naznačenu adresu (labelu)
 
 Kod implementacije po vrstama memorijski ofset se računa na sljedeći način:
  adresa = početna_adresa + (index_vrste *broj_kolona + index_kolone) * mem_veličina_podatka
-Kod implementacije po vrstama memorijski ofset se računa na sljedeći način: 
-adresa = početna_adresa + (index_vrste *broj_kolona + index_kolone) * mem_veličina_podatka
+Kod implementacije po kolonama memorijski ofset se računa na sljedeći način: 
+adresa = početna_adresa + (index_kolone *broj_vrste + index_vrste) * mem_veličina_podatka
