@@ -1,0 +1,13 @@
+Private Sub Workbook_Open()
+ Dim Dugme As CommandBarButton
+ Set Dugme = Application.CommandBars("Standard").Controls.Add( _
+ Type:=msoControlButton, Temporary:=True)
+ With Dugme
+ .Style = msoButtonCaption
+ .Caption = "Funkcija"
+ .OnAction = "proba"
+ End With
+End Sub
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+a.font.italic=true
+range.higlightcolorindex=wd
